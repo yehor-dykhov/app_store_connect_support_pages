@@ -640,3 +640,304 @@ a {
     justify-content: center;
   }
 }
+
+/* --- MULTI-APP NAVIGATION BAR --- */
+.global-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--color-border);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  transition: var(--transition-smooth);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.5px;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e84c1c, #6366f1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  padding: 6px 0;
+  position: relative;
+  transition: var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--color-text-primary);
+}
+
+.nav-link.active {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-text-primary);
+  border-radius: 2px;
+}
+
+.main-content {
+  min-height: calc(100svh - 64px - 100px); /* Account for nav and footer */
+}
+
+/* --- PORTFOLIO HOME STYLING --- */
+.portfolio-hero {
+  padding: 80px 0 40px;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.portfolio-avatar-wrapper {
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.portfolio-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e84c1c 0%, #6366f1 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.2);
+}
+
+.portfolio-title {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.portfolio-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6366f1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.portfolio-bio {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.portfolio-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-icon-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-primary);
+  transition: var(--transition-smooth);
+}
+
+.social-icon-link:hover {
+  color: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* --- APPS GRID --- */
+.portfolio-apps-section {
+  padding: 40px 0 80px;
+}
+
+.portfolio-section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.app-card {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  background-color: var(--color-bg-primary);
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-md);
+}
+
+.app-card-icon-wrapper {
+  flex-shrink: 0;
+}
+
+.app-card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.app-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.app-card-tagline {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.app-card-action {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.app-card:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* --- IMMERSIVE BIBLE THEME OVERRIDES --- */
+.ib-theme {
+  --color-accent: #6366f1;
+  --color-accent-hover: #4f46e5;
+  --color-accent-light: rgba(99, 102, 241, 0.08);
+}
+
+/* Specific button shadow for Bible App */
+.ib-theme .btn-primary {
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.ib-theme .btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+}
+
+.ib-theme .feature-card:hover {
+  border-color: rgba(99, 102, 241, 0.25);
+}
+
+.ib-theme .support-card::before {
+  background: linear-gradient(90deg, var(--color-accent) 0%, #a5b4fc 100%);
+}
+
+.ib-theme .footer-link:hover {
+  color: var(--color-accent);
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .portfolio-hero {
+    padding: 60px 0 30px;
+  }
+  
+  .portfolio-title {
+    font-size: 36px;
+  }
+  
+  .global-nav {
+    height: 56px;
+  }
+  
+  .nav-links {
+    gap: 16px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+  }
+}
