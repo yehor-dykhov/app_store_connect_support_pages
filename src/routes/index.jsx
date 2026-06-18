@@ -17,9 +17,12 @@ function PortfolioHome() {
       {/* Developer Profile Header */}
       <section className="portfolio-hero">
         <div className="portfolio-avatar-wrapper">
-          <div className="portfolio-avatar">
-            YD
-          </div>
+          <img
+            src="/assets/avatar_80s.png"
+            alt="Yehor Dykhov"
+            className="portfolio-avatar"
+            style={{ objectFit: 'cover' }}
+          />
         </div>
         <h1 className="portfolio-title">Yehor Dykhov</h1>
         <p className="portfolio-subtitle">iOS & Web Developer</p>
