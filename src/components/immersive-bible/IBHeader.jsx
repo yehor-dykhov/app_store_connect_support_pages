@@ -13,7 +13,7 @@ export default function IBHeader() {
         <p className="hero-subtitle">Welcome to</p>
         <h1 className="hero-title">Immersive Bible</h1>
         <p className="hero-tagline">
-          Experience Scripture like never before. Listen to dramatized audio, track your reading progress, study daily reading plans, and customize your reading view in a beautiful, distraction-free environment.
+          Immersive Bible is a calm, minimal Bible reading app created for deep focus, slow reflection, and distraction-free Scripture reading.
         </p>
         <div className="hero-cta-group">
           <a className="app-store-btn" href="#" style={{ display: "inline-block" }}>

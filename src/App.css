@@ -915,6 +915,92 @@ a {
   color: var(--color-accent);
 }
 
+/* Immersive Bible grid layout overrides */
+@media (min-width: 992px) {
+  .ib-theme .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ib-theme .features-grid > :nth-child(7) {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .ib-theme .features-grid > :nth-child(7) {
+    grid-column: span 2;
+    max-width: calc(50% - 16px);
+    justify-self: center;
+  }
+}
+
+/* Features Conclusion & Tagline Styles */
+.features-conclusion {
+  margin-top: 80px;
+  padding: 48px 40px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.02) 0%, rgba(165, 180, 252, 0.05) 100%);
+  border-radius: 32px;
+  border: 1px solid rgba(99, 102, 241, 0.08);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.conclusion-lead {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  max-width: 720px;
+  margin: 0 auto 36px;
+  font-weight: 500;
+}
+
+.tagline-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.tagline-item {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.tagline-item:not(:last-child)::after {
+  content: '•';
+  position: absolute;
+  right: -28px;
+  color: var(--color-text-tertiary);
+  opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .features-conclusion {
+    margin-top: 60px;
+    padding: 36px 24px;
+  }
+  
+  .conclusion-lead {
+    font-size: 17px;
+    margin-bottom: 28px;
+  }
+  
+  .tagline-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .tagline-item {
+    font-size: 18px;
+  }
+  
+  .tagline-item:not(:last-child)::after {
+    display: none;
+  }
+}
+
 /* --- RESPONSIVE ADJUSTMENTS --- */
 @media (max-width: 768px) {
   .portfolio-grid {

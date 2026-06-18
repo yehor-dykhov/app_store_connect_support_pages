@@ -16,7 +16,7 @@ function RootLayout() {
         <footer className="app-footer">
           <div className="container footer-container">
             <p className="footer-copyright">
-              &copy; {year} Resume Validator. All rights reserved.
+              &copy; {year} Yehor Dykhov. All rights reserved.
             </p>
             <div className="footer-links">
               <a href="https://drive.google.com/file/d/10yd0duUcgMtX7ioypLYPEfLmE7tWw_Ma/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="footer-link">Privacy Policy</a>
@@ -30,11 +30,11 @@ function RootLayout() {
         <footer className="app-footer">
           <div className="container footer-container">
             <p className="footer-copyright">
-              &copy; {year} Immersive Bible. All rights reserved.
+              &copy; {year} Yehor Dykhov. All rights reserved.
             </p>
             <div className="footer-links">
-              <a href="#" className="footer-link">Privacy Policy</a>
-              <a href="#" className="footer-link">Terms & Conditions</a>
+              <a href="https://docs.google.com/document/d/15iSL9r-j-DVc-JDOvTpPMHcdQCXdQ1T7KKZqJCa1tEY/edit?usp=drive_link" className="footer-link">Privacy Policy</a>
+              <a href="https://docs.google.com/document/d/1ZeuyosATA8K_17b-Eh69TU-x6q_GyjnzsuFnx01WDo0/edit?usp=sharing" className="footer-link">Terms & Conditions</a>
             </div>
           </div>
         </footer>
@@ -48,8 +48,8 @@ function RootLayout() {
               &copy; {year} Yehor Dykhov. All rights reserved.
             </p>
             <div className="footer-links">
-              <a href="#" className="footer-link">GitHub</a>
-              <a href="#" className="footer-link">LinkedIn</a>
+              <a href="https://github.com/yehor-dykhov" className="footer-link">GitHub</a>
+              <a href="https://www.linkedin.com/in/yehor-dykhov" className="footer-link">LinkedIn</a>
             </div>
           </div>
         </footer>

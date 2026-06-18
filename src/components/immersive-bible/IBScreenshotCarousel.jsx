@@ -1,11 +1,11 @@
 import { useRef, useState, useEffect } from 'react';
 
 const screenshots = [
-  { src: '/assets/immersive-bible/1.jpg', alt: 'Bible Reading Screen - Immersive Bible' },
-  { src: '/assets/immersive-bible/2.jpg', alt: 'Reading Plans Screen - Immersive Bible' },
-  { src: '/assets/immersive-bible/3.jpg', alt: 'Discover & Explore Screen - Immersive Bible' },
-  { src: '/assets/immersive-bible/4.jpg', alt: 'Theme Customization Screen - Immersive Bible' },
-  { src: '/assets/immersive-bible/5.jpg', alt: 'Community Discussion Screen - Immersive Bible' },
+  { src: '/assets/immersive-bible/1.png', alt: 'Bible Reading Screen - Immersive Bible' },
+  { src: '/assets/immersive-bible/2.png', alt: 'Reading Plans Screen - Immersive Bible' },
+  { src: '/assets/immersive-bible/3.png', alt: 'Discover & Explore Screen - Immersive Bible' },
+  { src: '/assets/immersive-bible/4.png', alt: 'Theme Customization Screen - Immersive Bible' },
+  { src: '/assets/immersive-bible/5.png', alt: 'Community Discussion Screen - Immersive Bible' },
 ];
 
 export default function IBScreenshotCarousel() {

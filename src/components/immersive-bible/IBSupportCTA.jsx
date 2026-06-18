@@ -33,7 +33,7 @@ export default function IBSupportCTA() {
             Our team is here to assist you. If you have questions about reading plans, audio player issues, or offline translation downloads, please don't hesitate to reach out.
           </p>
           <div className="support-button-group">
-            <a href="https://forms.gle/tLsEKeukSmYngkFQ7" className="btn btn-primary" aria-label="Contact Support">
+            <a href="https://forms.gle/TWvYT3L67T19FwqdA" className="btn btn-primary" aria-label="Contact Support">
               Contact Support
             </a>
           </div>

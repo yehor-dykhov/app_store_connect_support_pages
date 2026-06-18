@@ -27,19 +27,22 @@ export default function IBDescription() {
   return (
     <section className="description-section scroll-reveal" ref={sectionRef} id="about">
       <div className="container description-container">
-        <h2 className="section-title text-center">Reimagine Your Scripture Reading Experience</h2>
+        <h2 className="section-title text-center">A Calm Space for God's Word</h2>
 
         <div className="description-content">
-          <p className="lead-paragraph">
-            Do you struggle to stay consistent with scripture reading amidst constant notifications and digital clutter? The issue isn't your commitment—it's that traditional reading apps fail to offer a truly <strong>focused and peaceful</strong> space.
+          <p className="lead-paragraph text-center">
+            <strong>Immersive Bible</strong> is a calm, minimal Bible reading app created for deep focus, slow reflection, and distraction-free Scripture reading.
           </p>
 
           <div className="body-paragraphs">
             <p>
-              <strong>Immersive Bible</strong> is designed to change that. Built with a gorgeous, distraction-free reading interface and a high-fidelity dramatized audio narrator, it transforms scripture reading from a routine task into a deeply engaging, immersive journey.
+              Instead of overwhelming you with long chapters, dense layouts, and visual noise, Immersive Bible helps you focus on one verse at a time. The interface is intentionally simple, giving your mind more space to read, understand, and meditate on God’s Word.
             </p>
             <p>
-              Whether you are working through a 365-day plan, highlighting a meaningful verse, or looking to customize your view with elegant typefaces and pastel themes, Immersive Bible serves as your premium spiritual companion.
+              Immersive Bible was created for people who want a quieter and more focused way to read the Bible — including readers with ADHD, dyslexia, racing thoughts, visual crowding, or difficulty staying focused during longer reading sessions.
+            </p>
+            <p>
+              Whether you are reading during daily devotion, prayer, study, or a quiet moment in a busy day, Immersive Bible helps you slow down and stay present with Scripture.
             </p>
           </div>
         </div>

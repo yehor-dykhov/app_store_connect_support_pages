@@ -16,7 +16,7 @@ export default function Header() {
           The ultimate AI-powered career companion. Scan, score, and rewrite your resume in seconds to beat the recruiting bots and land more interviews.
         </p>
         <div className="hero-cta-group">
-          <a className="app-store-btn" href="#" style={{ display: "inline-block" }}>
+          <a className="app-store-btn" href="https://apps.apple.com/us/app/smart-cv-resume-validator/id6762081081" style={{ display: "inline-block" }}>
             <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1453507200" alt="Download on the App Store" style={{ width: 185, height: 54, verticalAlign: "middle", objectFit: "contain" }} />
           </a>
         </div>
