@@ -12,7 +12,7 @@ export const Route = createFileRoute('/immersive-bible')({
 
 function ImmersiveBibleSupport() {
   useEffect(() => {
-    document.title = 'Immersive Bible — Experience Scripture Like Never Before';
+    document.title = 'Your Immersive Bible — Experience Scripture Like Never Before';
   }, []);
 
   return (

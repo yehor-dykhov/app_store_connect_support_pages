@@ -5,15 +5,15 @@ export default function IBHeader() {
         <div className="hero-logo-wrapper">
           <img
             src="/assets/immersive-bible/icon.png"
-            alt="Immersive Bible App Icon"
+            alt="Your Immersive Bible App Icon"
             className="hero-logo"
             loading="eager"
           />
         </div>
         <p className="hero-subtitle">Welcome to</p>
-        <h1 className="hero-title">Immersive Bible</h1>
+        <h1 className="hero-title">Your Immersive Bible</h1>
         <p className="hero-tagline">
-          Immersive Bible is a calm, minimal Bible reading app created for deep focus, slow reflection, and distraction-free Scripture reading.
+          Your Immersive Bible is a calm, minimal Bible reading app created for deep focus, slow reflection, and distraction-free Scripture reading.
         </p>
         <div className="hero-cta-group">
           <a className="app-store-btn" href="#" style={{ display: "inline-block" }}>

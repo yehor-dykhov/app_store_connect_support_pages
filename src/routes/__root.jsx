@@ -1,4 +1,5 @@
 import { createRootRoute, Link, Outlet, useLocation } from '@tanstack/react-router';
+import { useState, useEffect, useCallback } from 'react';
 
 export const Route = createRootRoute({
   component: RootLayout,
@@ -7,6 +8,30 @@ export const Route = createRootRoute({
 function RootLayout() {
   const location = useLocation();
   const path = location.pathname;
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [path]);
+
+  // Toggle body scroll lock when menu is open
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+    return () => document.body.classList.remove('menu-open');
+  }, [menuOpen]);
+
+  const toggleMenu = useCallback(() => {
+    setMenuOpen((prev) => !prev);
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    setMenuOpen(false);
+  }, []);
 
   // Determine footer content based on active route
   const getFooter = () => {
@@ -61,14 +86,33 @@ function RootLayout() {
     <div className="app-wrapper">
       <nav className="global-nav">
         <div className="container nav-container">
-          <Link to="/" className="nav-brand">
+          <Link to="/" className="nav-brand" onClick={closeMenu}>
             <span className="brand-dot"></span>
             Yehor Dykhov
           </Link>
-          <div className="nav-links">
-            <Link to="/" className="nav-link" activeProps={{ className: 'active' }}>Apps</Link>
-            <Link to="/resume-validator" className="nav-link" activeProps={{ className: 'active' }}>Resume Validator</Link>
-            <Link to="/immersive-bible" className="nav-link" activeProps={{ className: 'active' }}>Immersive Bible</Link>
+
+          {/* Burger button — visible only on mobile via CSS */}
+          <button
+            className={`burger-btn${menuOpen ? ' open' : ''}`}
+            onClick={toggleMenu}
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+          >
+            <span className="burger-bar" />
+            <span className="burger-bar" />
+            <span className="burger-bar" />
+          </button>
+
+          <div className={`nav-links${menuOpen ? ' open' : ''}`}>
+            <Link to="/" className="nav-link" activeProps={{ className: 'active' }} onClick={closeMenu}>Apps</Link>
+            <Link to="/resume-validator" className="nav-link" activeProps={{ className: 'active' }} onClick={closeMenu}>
+              <img src="/assets/icon.png" alt="" className="nav-link-icon" />
+              Resume Validator
+            </Link>
+            <Link to="/immersive-bible" className="nav-link" activeProps={{ className: 'active' }} onClick={closeMenu}>
+              <img src="/assets/immersive-bible/icon.png" alt="" className="nav-link-icon" />
+              Your Immersive Bible
+            </Link>
           </div>
         </div>
       </nav>

@@ -107,7 +107,7 @@ export default function IBFeatures() {
   return (
     <section className="features-section scroll-reveal" ref={sectionRef} id="features">
       <div className="container">
-        <h2 className="section-title text-center">Why Immersive Bible is Different</h2>
+        <h2 className="section-title text-center">Why Your Immersive Bible is Different</h2>
         <p className="section-subtitle text-center">
           Built for readers who want a quieter, more focused way to read and reflect on God’s Word.
         </p>
@@ -126,7 +126,7 @@ export default function IBFeatures() {
 
         <div className="features-conclusion text-center">
           <p className="conclusion-lead">
-            Immersive Bible is for anyone who wants to slow down, remove distractions, and engage with Scripture more deeply — one verse at a time.
+            Your Immersive Bible is for anyone who wants to slow down, remove distractions, and engage with Scripture more deeply — one verse at a time.
           </p>
           <div className="tagline-group">
             <div className="tagline-item">Read less noise.</div>

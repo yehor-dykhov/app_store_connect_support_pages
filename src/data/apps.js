@@ -10,7 +10,7 @@ export const apps = [
   },
   {
     id: 'immersive-bible',
-    name: 'Immersive Bible',
+    name: 'Your Immersive Bible',
     tagline: 'Experience Scripture Like Never Before',
     icon: '/assets/immersive-bible/icon.png',
     route: '/immersive-bible',
