@@ -58,8 +58,8 @@ function RootLayout() {
               &copy; {year} Yehor Dykhov. All rights reserved.
             </p>
             <div className="footer-links">
-              <a href="https://docs.google.com/document/d/15iSL9r-j-DVc-JDOvTpPMHcdQCXdQ1T7KKZqJCa1tEY/edit?usp=drive_link" className="footer-link">Privacy Policy</a>
-              <a href="https://docs.google.com/document/d/1ZeuyosATA8K_17b-Eh69TU-x6q_GyjnzsuFnx01WDo0/edit?usp=sharing" className="footer-link">Terms & Conditions</a>
+              <a href="https://docs.google.com/document/d/15iSL9r-j-DVc-JDOvTpPMHcdQCXdQ1T7KKZqJCa1tEY/edit?usp=drive_link" target="_blank" rel="noopener noreferrer" className="footer-link">Privacy Policy</a>
+              <a href="https://docs.google.com/document/d/1ZeuyosATA8K_17b-Eh69TU-x6q_GyjnzsuFnx01WDo0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="footer-link">Terms & Conditions</a>
             </div>
           </div>
         </footer>
