@@ -15,6 +15,6 @@ export const apps = [
     icon: '/assets/immersive-bible/icon.png',
     route: '/immersive-bible',
     accentColor: '#6366f1',
-    appStoreUrl: '#',
+    appStoreUrl: 'https://apps.apple.com/ua/app/your-immersive-bible/id6779601396',
   },
 ];

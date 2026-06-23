@@ -16,7 +16,7 @@ export default function IBHeader() {
           Your Immersive Bible is a calm, minimal Bible reading app created for deep focus, slow reflection, and distraction-free Scripture reading.
         </p>
         <div className="hero-cta-group">
-          <a className="app-store-btn" href="#" style={{ display: "inline-block" }}>
+          <a className="app-store-btn" href="https://apps.apple.com/ua/app/your-immersive-bible/id6779601396" style={{ display: "inline-block" }}>
             <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1453507200" alt="Download on the App Store" style={{ width: 185, height: 54, verticalAlign: "middle", objectFit: "contain" }} />
           </a>
         </div>
